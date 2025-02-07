@@ -1,14 +1,14 @@
 import streamlit as st
 from fastai.vision.all import *
 import plotly.express as px
-import pathlib
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
+# import pathlib
+# temp = pathlib.PosixPath
+# pathlib.PosixPath = pathlib.WindowsPath
 
-# import platform
-#
-# plt = platform.system()
-# if plt == "Linux":pathlib.WindowsPath = pathlib.PosixPath
+import platform
+
+plt = platform.system()
+if plt == "Linux":pathlib.WindowsPath = pathlib.PosixPath
 
 st.title("Furnitures classification model!")
 
